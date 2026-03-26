@@ -54,6 +54,21 @@ The neural network is essentially **learning the same probability table** that t
 
 ---
 
+## Why we need Neural Network implementation
+# ⚠️ Limitations of Bigram Models
+
+Bigram models are limited because they only consider one previous character to predict the next. This restricts their ability to capture longer patterns in names.
+
+When we try to increase the context (e.g., trigrams or higher n-grams), the size of the count matrix grows exponentially.
+
+For example:
+- Bigram: 27 × 27 = 729
+- Trigram: 27 × 27 × 27 = 19,683
+
+This rapid growth makes count-based methods inefficient and difficult to manage for larger contexts.
+
+To overcome this, neural networks are used. They can learn patterns from larger contexts without explicitly storing massive tables, making them more scalable and powerful.
+
 ## 📊 Bigram vs Neural Network
 
 | Aspect      | Count-based Model | Neural Network           |
