@@ -76,8 +76,7 @@ The neural network is essentially **learning the same probability table** that t
 
 ## 📌 Learning Source
 
-This project was implemented while learning neural networks and language modeling concepts from the makemore series by Andrej Karpathy.
-The code was written independently to better understand how the system works.
+This project was implemented while learning neural network and language model concepts from the makemore series by Andrej Karpathy. The code follows his implementation closely — I restructured it by changing variable names for better understanding and it also gives a proper name convention and also wrapped the forward pass, loss computation, backward pass, and update step (in neural net implementation) into separate functions for clarity. The explanations in this README are written in my own words to document what I understood
 
 ---
 
