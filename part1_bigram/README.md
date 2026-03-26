@@ -1,0 +1,90 @@
+# Bigram Language Model — From Counts to Neural Networks
+
+This project implements a **character-level bigram language model** in two different ways:
+
+1. A **count-based approach** using frequency matrices
+2. A **neural network approach** using PyTorch
+
+The goal is to understand how models can learn to generate text (names) by predicting the next character based on the current one.
+
+---
+
+## 📂 Files
+
+* `bigram.ipynb` — Builds the model using raw counts and probability matrices
+* `nn_bigram.ipynb` — Reimplements the same idea using a neural network
+* `names.txt` — Dataset used for training
+
+---
+
+## 🧠 What this project does
+
+At its core, the model learns:
+
+> “Given one character, what is the most likely next character?”
+
+It then uses these learned probabilities to generate new names by sampling one character at a time.
+
+---
+
+## ⚙️ Workflow (Bigram)
+
+```text
+Names → Character mapping → Bigram pairs → Count matrix → Probabilities → Sampling
+```
+
+---
+
+## ⚙️ Workflow (Neural Network)
+
+```text
+Input character → One-hot encoding → Linear layer → Softmax → Probabilities
+→ Loss calculation → Backpropagation → Weight updates
+```
+
+---
+
+## 🔍 Key Insight
+
+While implementing both versions, I realized:
+
+> A single-layer neural network with softmax can represent the same behavior as the bigram count model.
+
+The neural network is essentially **learning the same probability table** that the count-based approach computes directly.
+
+---
+
+## 📊 Bigram vs Neural Network
+
+| Aspect      | Count-based Model | Neural Network           |
+| ----------- | ----------------- | ------------------------ |
+| Approach    | Direct counting   | Learned through training |
+| Training    | Not required      | Uses gradient descent    |
+| Flexibility | Limited           | Can be extended further  |
+
+---
+
+## 🚀 What I Learned
+
+* How probability distributions can be built from raw data
+* Why log probabilities are used for stable training
+* How neural networks approximate statistical models
+* How sampling from probabilities generates realistic outputs
+* Why log likelihood or negative log likelihood is used as loss function
+
+---
+
+## 📌 Learning Source
+
+This project was implemented while learning neural networks and language modeling concepts from the makemore series by Andrej Karpathy.
+The code was written independently to better understand how the system works.
+
+---
+
+## ▶️ How to Run
+
+1. Open the notebooks in Jupyter or VS Code
+2. Run all cells in order
+3. Observe generated names
+
+---
