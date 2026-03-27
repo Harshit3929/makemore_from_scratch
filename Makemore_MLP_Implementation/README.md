@@ -160,8 +160,9 @@ Embeddings:
 
 ## 📌 Learning Source
 
-This project was implemented while learning neural networks and language modeling concepts from the makemore series by Andrej Karpathy.
-The code follows Karpathy's implementation closely. I focused on understanding each concept deeply, which is documented in the sections above.
+This project was implemented while learning neural networks and language modeling concepts from the makemore series by Andrej Karpathy. 
+The code follows his implementation closely — repetitive cells were restructured into functions as an attempt to better understand the flow, which succeeded. 
+The explanations above are written in my own words to document what I learned.
 
 ---
 
